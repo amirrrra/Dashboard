@@ -1,3 +1,4 @@
+import 'package:dashboard/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,8 +10,15 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            fontFamily: Constants.kMontserrat,
+          ),
+        ),
+      ),
     );
   }
 }
