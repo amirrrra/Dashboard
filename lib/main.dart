@@ -1,3 +1,4 @@
+import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class Dashboard extends StatelessWidget {
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             fontFamily: Constants.kMontserrat,
+            color: ColorsPallete.kPrimaryColor,
           ),
         ),
       ),
