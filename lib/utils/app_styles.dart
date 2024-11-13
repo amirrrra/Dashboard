@@ -1,3 +1,4 @@
+import 'package:dashboard/utils/constants.dart';
 import 'package:dashboard/utils/size_config.dart';
 import 'package:flutter/widgets.dart';
 
@@ -5,70 +6,67 @@ abstract class AppStyles {
   static TextStyle regular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w400,
     );
   }
 
   static TextStyle regular12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
-      fontWeight: FontWeight.w400,
     );
   }
 
   static TextStyle regular14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.w400,
     );
   }
 
   static TextStyle medium16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w500,
+      fontFamily: Constants.kMedium,
     );
   }
 
   static TextStyle medium20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
-      fontWeight: FontWeight.w500,
+      fontFamily: Constants.kMedium,
     );
   }
 
   static TextStyle semiBold16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w600,
+      fontFamily: Constants.kSemiBold,
     );
   }
 
   static TextStyle semiBold18(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w600,
+      fontFamily: Constants.kSemiBold,
     );
   }
 
   static TextStyle semiBold20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w600,
+      fontFamily: Constants.kSemiBold,
     );
   }
 
   static TextStyle semiBold24(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w600,
+      fontFamily: Constants.kSemiBold,
     );
   }
 
   static TextStyle bold16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w700,
+      fontFamily: Constants.kBold,
     );
   }
 }

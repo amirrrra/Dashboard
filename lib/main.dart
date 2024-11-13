@@ -16,7 +16,7 @@ class Dashboard extends StatelessWidget {
       theme: ThemeData(
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
-            fontFamily: Constants.kMontserrat,
+            fontFamily: Constants.kRegular,
             color: ColorsPallete.kPrimaryColor,
           ),
         ),
