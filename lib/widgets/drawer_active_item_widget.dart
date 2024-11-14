@@ -23,7 +23,6 @@ class DrawerActiveItemWidget extends StatelessWidget {
       ),
       trailing: Container(
         width: 3.27,
-        height: 48,
         color: ColorsPallete.kBlueSky,
       ),
     );
