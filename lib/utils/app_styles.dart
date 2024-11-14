@@ -71,6 +71,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
       fontWeight: FontWeight.w700,
+      color: ColorsPallete.kBlueSky,
     );
   }
 }
