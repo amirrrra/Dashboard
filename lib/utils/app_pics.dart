@@ -1,4 +1,4 @@
-abstract class Assets {
+abstract class AssetsData {
   static const kPicsAvatar1 = "assets/pics/avatar_1.svg";
 
   static const kPicsAvatar2 = "assets/pics/avatar_2.svg";

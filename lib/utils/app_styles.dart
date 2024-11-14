@@ -1,3 +1,4 @@
+import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/utils/size_config.dart';
 import 'package:flutter/widgets.dart';
 
@@ -13,6 +14,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
       fontWeight: FontWeight.w400,
+      color: ColorsPallete.kGrayLight,
     );
   }
 
