@@ -1,5 +1,6 @@
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/utils/constants.dart';
+import 'package:dashboard/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: const HomeView(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
-            fontFamily: Constants.kRegular,
+            fontFamily: Constants.kMontserrat,
             color: ColorsPallete.kPrimaryColor,
           ),
         ),
