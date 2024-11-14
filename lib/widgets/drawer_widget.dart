@@ -15,6 +15,7 @@ class DrawerWidget extends StatelessWidget {
       padding: const EdgeInsets.only(left: 12, right: 20),
       child: const Column(
         children: [
+          SizedBox(height: 40,),
           UserInfoWidget(
             userInfoModel: UserInfoModel(
               image: AssetsData.kAvatar3,
