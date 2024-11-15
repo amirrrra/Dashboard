@@ -2,6 +2,7 @@ import 'package:dashboard/models/user_info_model.dart';
 import 'package:dashboard/utils/assets_data.dart';
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/drawer_items_list_widget.dart';
+import 'package:dashboard/widgets/drawer_trailing_items_widget.dart';
 import 'package:dashboard/widgets/user_info_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,10 @@ class DrawerWidget extends StatelessWidget {
               gmail: 'demo@gmail.com',
             ),
           ),
-          DrawerItemsListWidget()
+          DrawerItemsListWidget(),
+          Spacer(),
+          DrawerTrailingItemsWidget(),
+          SizedBox(height: 40,)
         ],
       ),
     );

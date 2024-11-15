@@ -21,7 +21,7 @@ abstract class AssetsData {
 
   static const kLogout = "assets/pics/logout.svg";
 
-  static const kPicsSettings = "assets/pics/settings.svg";
+  static const kSettings = "assets/pics/settings.svg";
 
   static const kStatistics = "assets/pics/statistics.svg";
 
