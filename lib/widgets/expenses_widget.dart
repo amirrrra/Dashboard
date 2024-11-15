@@ -1,4 +1,5 @@
 import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/widgets/expenses_item_widget.dart';
 import 'package:dashboard/widgets/header_periodicity_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,9 @@ class ExpensesWidget extends StatelessWidget {
           HeaderWidget(
             title: 'All Expenses',
             widget: HeaderPeriodicityWidget(),
-          )
+          ),
+          SizedBox(height: 16),
+          ExpensesItemWidget()
         ],
       ),
     );

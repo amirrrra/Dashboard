@@ -22,6 +22,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w400,
+      color: ColorsPallete.kGrayLight,
     );
   }
 
@@ -48,22 +49,23 @@ abstract class AppStyles {
 
   static TextStyle semiBold18(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
+      fontSize: getResponsiveFontSize(context, 18),
       fontWeight: FontWeight.w600,
     );
   }
 
   static TextStyle semiBold20(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
+      fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.w600,
     );
   }
 
   static TextStyle semiBold24(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
+      fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w600,
+      color: ColorsPallete.kBlueSky,
     );
   }
 

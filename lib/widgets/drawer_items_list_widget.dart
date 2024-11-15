@@ -1,4 +1,4 @@
-import 'package:dashboard/models/drawer_item_model.dart';
+import 'package:dashboard/models/drawer_model.dart';
 import 'package:dashboard/utils/assets_data.dart';
 import 'package:dashboard/widgets/drawer_item_widget.dart';
 import 'package:flutter/material.dart';
@@ -12,12 +12,12 @@ class DrawerItemsListWidget extends StatefulWidget {
 
 class _DrawerItemsListWidgetState extends State<DrawerItemsListWidget> {
   int selectedIndex = 0;
-  final List<DrawerItemModel> drawerItems = const [
-    DrawerItemModel(icon: AssetsData.kDashboard, title: 'Dashboard'),
-    DrawerItemModel(icon: AssetsData.kTransctions, title: 'Transctions'),
-    DrawerItemModel(icon: AssetsData.kStatistics, title: 'Statistics'),
-    DrawerItemModel(icon: AssetsData.kWallet, title: 'Wallet'),
-    DrawerItemModel(icon: AssetsData.kInvestments, title: 'Investments'),
+  final List<DrawerModel> drawerItems = const [
+    DrawerModel(icon: AssetsData.kDashboard, title: 'Dashboard'),
+    DrawerModel(icon: AssetsData.kTransctions, title: 'Transctions'),
+    DrawerModel(icon: AssetsData.kStatistics, title: 'Statistics'),
+    DrawerModel(icon: AssetsData.kWallet, title: 'Wallet'),
+    DrawerModel(icon: AssetsData.kInvestments, title: 'Investments'),
   ];
 
   @override
@@ -25,7 +25,7 @@ class _DrawerItemsListWidgetState extends State<DrawerItemsListWidget> {
     return Column(
       children: drawerItems.asMap().entries.map((e) {
         int index = e.key;
-        DrawerItemModel item = e.value;
+        DrawerModel item = e.value;
         return GestureDetector(
           onTap: () {
             setState(() {
@@ -37,7 +37,7 @@ class _DrawerItemsListWidgetState extends State<DrawerItemsListWidget> {
               vertical: 2,
             ),
             child: DrawerItemWidget(
-              drawerItemModel: item,
+              drawerModel: item,
               isActive: selectedIndex == index,
             ),
           ),
