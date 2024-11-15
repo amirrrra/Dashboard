@@ -1,5 +1,5 @@
 class ExpensesModel {
-  final String title, history, image, price;
+  final String title, history, price,image;
 
   const ExpensesModel({
     required this.title,
