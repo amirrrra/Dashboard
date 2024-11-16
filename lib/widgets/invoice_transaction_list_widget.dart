@@ -31,7 +31,9 @@ class InvoiceTransactionListWidget extends StatelessWidget {
       child: Row(
         children: invoicesItems
             .map(
-              (e) => IntrinsicWidth(child: UserInfoWidget(userInfoModel: e)),
+              (e) => IntrinsicWidth(
+                child: UserInfoWidget(userInfoModel: e),
+              ),
             )
             .toList(),
       ),

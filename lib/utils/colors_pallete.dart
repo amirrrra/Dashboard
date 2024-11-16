@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class ColorsPallete {
   static const kPrimaryColor = Color(0xff064061);
+  static const kTransparent = Colors.transparent;
   static const kWhite = Color(0xffFFFFFF);
   static const kBlueSky = Color(0xff4EB7F2);
   static const kWhiteSmoke = Color(0xffFAFAFA);

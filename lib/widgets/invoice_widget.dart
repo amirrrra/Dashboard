@@ -1,5 +1,6 @@
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/header_widget.dart';
+import 'package:dashboard/widgets/invoice_form_textfield_widget.dart';
 import 'package:dashboard/widgets/invoice_transaction_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +30,11 @@ class InvoiceWidget extends StatelessWidget {
           ),
           SizedBox(height: 24),
           InvoiceTransactionWidget(),
+          Divider(
+            color: ColorsPallete.kGrayWhisper,
+            height: 48,
+          ),
+          InvoiceFormTextfieldWidget()
         ],
       ),
     );
