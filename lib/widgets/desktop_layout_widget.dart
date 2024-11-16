@@ -1,3 +1,4 @@
+import 'package:dashboard/widgets/card_widget.dart';
 import 'package:dashboard/widgets/drawer_widget.dart';
 import 'package:dashboard/widgets/expenses_widget.dart';
 import 'package:dashboard/widgets/invoice_widget.dart';
@@ -18,7 +19,7 @@ class DesktopLayoutWidget extends StatelessWidget {
                 child: DrawerWidget(),
               ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: Padding(
                   padding: EdgeInsets.only(left: 32, right: 24, top: 40),
                   child: Column(
@@ -29,7 +30,18 @@ class DesktopLayoutWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
+              Expanded(
+                flex: 2,
+                child: Padding(
+                  padding: EdgeInsets.only(top: 40, right: 32),
+                  child: Column(
+                    children: [
+                      CardWidget(),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         )
