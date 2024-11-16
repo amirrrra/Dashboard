@@ -10,7 +10,6 @@ class ExpensesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 32, right: 24, top: 40, bottom: 24),
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 14),
       decoration: const BoxDecoration(
         color: ColorsPallete.kWhite,

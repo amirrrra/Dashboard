@@ -1,5 +1,6 @@
 import 'package:dashboard/widgets/drawer_widget.dart';
 import 'package:dashboard/widgets/expenses_widget.dart';
+import 'package:dashboard/widgets/invoice_widget.dart';
 import 'package:flutter/material.dart';
 
 class DesktopLayoutWidget extends StatelessWidget {
@@ -14,7 +15,16 @@ class DesktopLayoutWidget extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: ExpensesWidget(),
+          child: Padding(
+            padding:EdgeInsets.only(left: 32, right: 24, top: 40),
+            child: Column(            
+              children: [
+                ExpensesWidget(),
+                SizedBox(height: 24,),
+                InvoiceWidget()
+              ],
+            ),
+          ),
         )
       ],
     );
