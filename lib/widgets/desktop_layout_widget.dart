@@ -8,22 +8,31 @@ class DesktopLayoutWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Expanded(
-          child: DrawerWidget(),
-        ),
-        Expanded(
-          flex: 2,
-          child: Padding(
-            padding:EdgeInsets.only(left: 32, right: 24, top: 40),
-            child: Column(            
-              children: [
-                ExpensesWidget(),
-                SizedBox(height: 24,),
-                InvoiceWidget()
-              ],
-            ),
+    return const CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Row(
+            children: [
+              Expanded(
+                child: DrawerWidget(),
+              ),
+              Expanded(
+                flex: 2,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 32, right: 24, top: 40),
+                  child: Column(
+                    children: [
+                      ExpensesWidget(),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      InvoiceWidget()
+                    ],
+                  ),
+                ),
+              )
+            ],
           ),
         )
       ],

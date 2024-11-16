@@ -1,6 +1,6 @@
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/header_widget.dart';
-import 'package:dashboard/widgets/invoice_form_item_widget.dart';
+import 'package:dashboard/widgets/invoice_form_widget.dart';
 import 'package:dashboard/widgets/invoice_transaction_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class InvoiceWidget extends StatelessWidget {
             color: ColorsPallete.kGrayWhisper,
             height: 48,
           ),
-          InvoiceFormItemWidget()
+          InvoiceFormWidget()
         ],
       ),
     );

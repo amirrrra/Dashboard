@@ -3,22 +3,27 @@ import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:flutter/material.dart';
 
 class InvoiceFormTextfieldWidget extends StatelessWidget {
-  const InvoiceFormTextfieldWidget({super.key});
+  final String hint;
+
+  const InvoiceFormTextfieldWidget({super.key, required this.hint});
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      cursorColor: ColorsPallete.kPrimaryColor,
-      decoration: InputDecoration(
-        filled: true,
-        fillColor: ColorsPallete.kWhiteSmoke,
-        hoverColor: ColorsPallete.kTransparent,
-        hintText: 'Type customer name',
-        hintStyle: AppStyles.regular16(context).copyWith(
-          color: ColorsPallete.kGrayLight,
+    return SizedBox(
+      height: 60,
+      child: TextField(
+        cursorColor: ColorsPallete.kPrimaryColor,
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: ColorsPallete.kWhiteSmoke,
+          hoverColor: ColorsPallete.kTransparent,
+          hintText: hint,
+          hintStyle: AppStyles.regular16(context).copyWith(
+            color: ColorsPallete.kGrayLight,
+          ),
+          enabledBorder: getBorder(),
+          focusedBorder: getBorder(),
         ),
-        enabledBorder: getBorder(),
-        focusedBorder: getBorder(),
       ),
     );
   }
