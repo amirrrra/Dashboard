@@ -24,10 +24,8 @@ class DesktopLayoutWidget extends StatelessWidget {
                   child: Column(
                     children: [
                       ExpensesWidget(),
-                      SizedBox(
-                        height: 24,
-                      ),
-                      InvoiceWidget()
+                      SizedBox(height: 24),
+                      InvoiceWidget(),
                     ],
                   ),
                 ),
