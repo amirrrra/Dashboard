@@ -1,4 +1,4 @@
-import 'package:dashboard/widgets/card_pageview_widget.dart';
+import 'package:dashboard/widgets/card_widget.dart';
 import 'package:dashboard/widgets/drawer_widget.dart';
 import 'package:dashboard/widgets/expenses_widget.dart';
 import 'package:dashboard/widgets/invoice_widget.dart';
@@ -35,7 +35,7 @@ class DesktopLayoutWidget extends StatelessWidget {
                 flex: 2,
                 child: Padding(
                   padding: EdgeInsets.only(top: 40, right: 32),
-                  child: CardPageviewWidget(),
+                  child: CardWidget(),
                 ),
               ),
             ],

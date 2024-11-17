@@ -33,6 +33,7 @@ class CardContentWidget extends StatelessWidget {
             '0918 8124 0042 8129',
             style: AppStyles.semiBold24(context),
           ),
+          const SizedBox(height: 12),
           Text(
             '12/20 - 124',
             style: getRegular16(context),
