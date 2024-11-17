@@ -1,4 +1,3 @@
-import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/card_indicator_list_widget.dart';
 import 'package:dashboard/widgets/card_pageview_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
@@ -33,28 +32,19 @@ class _CardWidgetState extends State<CardWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return IntrinsicHeight(
-      child: Container(
-        padding: const EdgeInsets.all(24),
-        decoration: const BoxDecoration(
-          color: ColorsPallete.kWhite,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const HeaderWidget(title: 'My card'),
+        const SizedBox(height: 20),
+        CardPageviewWidget(
+          pageController: pageController,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const HeaderWidget(title: 'My card'),
-            const SizedBox(height: 20),
-            CardPageviewWidget(
-              pageController: pageController,
-            ),
-            const SizedBox(height: 19),
-            CardIndicatorListWidget(
-              activeIndex: activeIndex,
-            )
-          ],
-        ),
-      ),
+        const SizedBox(height: 19),
+        CardIndicatorListWidget(
+          activeIndex: activeIndex,
+        )
+      ],
     );
   }
 }

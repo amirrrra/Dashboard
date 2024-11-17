@@ -1,7 +1,7 @@
-import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/expenses_list_widget.dart';
 import 'package:dashboard/widgets/header_periodicity_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
+import 'package:dashboard/widgets/section_widget.dart';
 import 'package:flutter/material.dart';
 
 class ExpensesWidget extends StatelessWidget {
@@ -9,20 +9,12 @@ class ExpensesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 14),
-      decoration: const BoxDecoration(
-        color: ColorsPallete.kWhite,
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-      ),
-      child: const Column(
+    return const SectionWidget(
+      child: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 6),
-            child: HeaderWidget(
-              title: 'All Expenses',
-              widget: HeaderPeriodicityWidget(),
-            ),
+          HeaderWidget(
+            title: 'All Expenses',
+            widget: HeaderPeriodicityWidget(),
           ),
           SizedBox(height: 16),
           ExpensesListWidget()

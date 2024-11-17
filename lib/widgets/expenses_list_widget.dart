@@ -40,7 +40,7 @@ class _ExpensesListWidgetState extends State<ExpensesListWidget> {
             child: GestureDetector(
               onTap: () => updateIndex(index),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 6),
+                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
                 child: ExpensesItemWidget(
                   isActive: activeIndex == index,
                   expensesModel: expensesItems[index],
