@@ -1,7 +1,7 @@
 import 'package:dashboard/utils/assets_data.dart';
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/card_content_widget.dart';
-import 'package:dashboard/widgets/card_indicator_widget.dart';
+import 'package:dashboard/widgets/card_indicator_list_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -37,9 +37,9 @@ class CardWidget extends StatelessWidget {
                 ),
                 child: const CardContentWidget(),
               ),
-            )
-          ,const SizedBox(height: 19),
-          const CardIndicatorWidget()
+            ),
+            const SizedBox(height: 19),
+            const CardIndicatorListWidget()
           ],
         ),
       ),
