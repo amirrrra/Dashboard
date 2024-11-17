@@ -44,7 +44,9 @@ class ExpensesInactiveItemWidget extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             expensesModel.price,
-            style: AppStyles.semiBold24(context),
+            style: AppStyles.semiBold24(context).copyWith(
+              color: ColorsPallete.kBlueSky,
+            ),
           )
         ],
       ),

@@ -55,9 +55,7 @@ class ExpensesActiveItemWidget extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             expensesModel.price,
-            style: AppStyles.semiBold24(context).copyWith(
-              color: ColorsPallete.kWhite,
-            ),
+            style: AppStyles.semiBold24(context),
           )
         ],
       ),

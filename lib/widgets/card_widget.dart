@@ -1,4 +1,6 @@
+import 'package:dashboard/utils/assets_data.dart';
 import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/widgets/card_content_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -13,13 +15,26 @@ class CardWidget extends StatelessWidget {
         color: ColorsPallete.kWhite,
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          HeaderWidget(
-            title: 'My card',
-          ),
-          SizedBox(height: 20),
+          const HeaderWidget(title: 'My card'),
+          const SizedBox(height: 20),
+          AspectRatio(
+            aspectRatio: 420 / 215,
+            child: Container(
+              decoration: const ShapeDecoration(
+                image: DecorationImage(
+                  image: AssetImage(AssetsData.kCardBackground),
+                ),
+                color: ColorsPallete.kBlueSky,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+              ),
+              child: const CardContentWidget(),
+            ),
+          )
         ],
       ),
     );

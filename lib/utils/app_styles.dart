@@ -37,6 +37,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.w500,
+      color: ColorsPallete.kWhite
     );
   }
 
@@ -66,7 +67,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w600,
-      color: ColorsPallete.kBlueSky,
+      color: ColorsPallete.kWhite,
     );
   }
 
