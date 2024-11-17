@@ -16,4 +16,5 @@ abstract class ColorsPallete {
   static const kGreenMint = Color(0xff7DD97B);
   static const kBeige = Color(0xffE2DECD);
   static const kWhiteOff = Color(0xffF7F9FA);
+  static const kPlatinum = Color(0xFFE7E7E7);
 }
