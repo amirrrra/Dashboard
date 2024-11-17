@@ -9,33 +9,36 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: const BoxDecoration(
-        color: ColorsPallete.kWhite,
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const HeaderWidget(title: 'My card'),
-          const SizedBox(height: 20),
-          AspectRatio(
-            aspectRatio: 420 / 215,
-            child: Container(
-              decoration: const ShapeDecoration(
-                image: DecorationImage(
-                  image: AssetImage(AssetsData.kCardBackground),
+    return IntrinsicHeight(
+      child: Container(
+        padding: const EdgeInsets.all(24),
+        decoration: const BoxDecoration(
+          color: ColorsPallete.kWhite,
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const HeaderWidget(title: 'My card'),
+            const SizedBox(height: 20),
+            AspectRatio(
+              aspectRatio: 420 / 215,
+              child: Container(
+                decoration: const ShapeDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage(AssetsData.kCardBackground),
+                  ),
+                  color: ColorsPallete.kBlueSky,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(12)),
+                  ),
                 ),
-                color: ColorsPallete.kBlueSky,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
-                ),
+                child: const CardContentWidget(),
               ),
-              child: const CardContentWidget(),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
