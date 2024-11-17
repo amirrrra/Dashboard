@@ -11,8 +11,6 @@ class ExpensesInactiveItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 180,
-      height: 216,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: const ShapeDecoration(
         shape: RoundedRectangleBorder(
@@ -33,7 +31,7 @@ class ExpensesInactiveItemWidget extends StatelessWidget {
               ),
             ],
           ),
-          const Spacer(),
+          const SizedBox(height: 34),
           Text(
             expensesModel.title,
             style: AppStyles.semiBold16(context),

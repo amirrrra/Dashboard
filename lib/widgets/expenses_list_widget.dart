@@ -36,13 +36,15 @@ class _ExpensesListWidgetState extends State<ExpensesListWidget> {
       children: List.generate(
         expensesItems.length,
         (index) {
-          return GestureDetector(
-            onTap: () => updateIndex(index),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 6),
-              child: ExpensesItemWidget(
-                isActive: activeIndex == index,
-                expensesModel: expensesItems[index],
+          return Expanded(
+            child: GestureDetector(
+              onTap: () => updateIndex(index),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 6),
+                child: ExpensesItemWidget(
+                  isActive: activeIndex == index,
+                  expensesModel: expensesItems[index],
+                ),
               ),
             ),
           );

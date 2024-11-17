@@ -35,11 +35,7 @@ class DesktopLayoutWidget extends StatelessWidget {
                 flex: 2,
                 child: Padding(
                   padding: EdgeInsets.only(top: 40, right: 32),
-                  child: Column(
-                    children: [
-                      CardWidget(),
-                    ],
-                  ),
+                  child: CardWidget(),
                 ),
               ),
             ],
