@@ -1,6 +1,7 @@
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:dashboard/widgets/header_widget.dart';
+import 'package:dashboard/widgets/transaction_item_widget.dart';
 import 'package:flutter/material.dart';
 
 class TransactionWidget extends StatelessWidget {
@@ -27,6 +28,8 @@ class TransactionWidget extends StatelessWidget {
             color: ColorsPallete.kGrayLight,
           ),
         ),
+        const SizedBox(height: 12),
+        const TransactionItemWidget()
       ],
     );
   }
