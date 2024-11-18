@@ -1,6 +1,7 @@
 import 'package:dashboard/widgets/header_periodicity_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:dashboard/widgets/income_chart_widget.dart';
+import 'package:dashboard/widgets/income_item_widget.dart';
 import 'package:dashboard/widgets/section_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,7 @@ class IncomeWidget extends StatelessWidget {
           Row(
             children: [
               Expanded(child: IncomeChartWidget()),
+              Expanded(child: IncomeItemWidget())
             ],
           )
         ],
