@@ -1,5 +1,6 @@
 import 'package:dashboard/widgets/header_periodicity_widget.dart';
 import 'package:dashboard/widgets/header_widget.dart';
+import 'package:dashboard/widgets/income_chart_widget.dart';
 import 'package:dashboard/widgets/section_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,11 @@ class IncomeWidget extends StatelessWidget {
             widget: HeaderPeriodicityWidget(),
           ),
           SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(child: IncomeChartWidget()),
+            ],
+          )
         ],
       ),
     );
