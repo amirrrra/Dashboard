@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/card_widget.dart';
 import 'package:dashboard/widgets/section_widget.dart';
 import 'package:dashboard/widgets/transaction_widget.dart';
@@ -15,7 +15,7 @@ class CardAndTransactionWidget extends StatelessWidget {
         CardWidget(),
         Divider(
           height: 40,
-          color: ColorsPallete.kGrayWhisper,
+          color: AppColors.kGrayWhisper,
         ),
         TransactionWidget(),
       ],

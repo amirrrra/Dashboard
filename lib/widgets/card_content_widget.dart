@@ -1,6 +1,6 @@
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/assets_data.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -44,5 +44,5 @@ class CardContentWidget extends StatelessWidget {
   }
 
   TextStyle getRegular16(BuildContext context) =>
-      AppStyles.regular16(context).copyWith(color: ColorsPallete.kWhite);
+      AppStyles.regular16(context).copyWith(color: AppColors.kWhite);
 }

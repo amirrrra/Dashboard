@@ -1,5 +1,5 @@
 import 'package:dashboard/utils/app_styles.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class InvoiceFormTextfieldWidget extends StatelessWidget {
@@ -12,14 +12,14 @@ class InvoiceFormTextfieldWidget extends StatelessWidget {
     return SizedBox(
       height: 60,
       child: TextField(
-        cursorColor: ColorsPallete.kPrimaryColor,
+        cursorColor: AppColors.kPrimaryColor,
         decoration: InputDecoration(
           filled: true,
-          fillColor: ColorsPallete.kWhiteSmoke,
-          hoverColor: ColorsPallete.kTransparent,
+          fillColor: AppColors.kWhiteSmoke,
+          hoverColor: AppColors.kTransparent,
           hintText: hint,
           hintStyle: AppStyles.regular16(context).copyWith(
-            color: ColorsPallete.kGrayLight,
+            color: AppColors.kGrayLight,
           ),
           enabledBorder: getBorder(),
           focusedBorder: getBorder(),

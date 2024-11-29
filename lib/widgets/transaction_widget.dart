@@ -1,5 +1,5 @@
 import 'package:dashboard/utils/app_styles.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:dashboard/widgets/transaction_list_widget.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class TransactionWidget extends StatelessWidget {
           widget: Text(
             'See all',
             style: AppStyles.medium16(context).copyWith(
-              color: ColorsPallete.kBlueSky,
+              color: AppColors.kBlueSky,
             ),
           ),
         ),
@@ -25,7 +25,7 @@ class TransactionWidget extends StatelessWidget {
         Text(
           '13 April 2022',
           style: AppStyles.medium16(context).copyWith(
-            color: ColorsPallete.kGrayLight,
+            color: AppColors.kGrayLight,
           ),
         ),
         const SizedBox(height: 12),

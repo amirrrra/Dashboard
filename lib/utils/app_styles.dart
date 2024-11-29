@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/utils/size_config.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,7 +14,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
       fontWeight: FontWeight.w400,
-      color: ColorsPallete.kGrayLight,
+      color: AppColors.kGrayLight,
     );
   }
 
@@ -22,7 +22,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w400,
-      color: ColorsPallete.kGrayLight,
+      color: AppColors.kGrayLight,
     );
   }
 
@@ -37,7 +37,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.w500,
-      color: ColorsPallete.kWhite
+      color: AppColors.kWhite
     );
   }
 
@@ -52,7 +52,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 18),
       fontWeight: FontWeight.w600,
-      color: ColorsPallete.kWhite
+      color: AppColors.kWhite
     );
   }
 
@@ -67,7 +67,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w600,
-      color: ColorsPallete.kWhite,
+      color: AppColors.kWhite,
     );
   }
 
@@ -75,7 +75,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
       fontWeight: FontWeight.w700,
-      color: ColorsPallete.kBlueSky,
+      color: AppColors.kBlueSky,
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:dashboard/utils/assets_data.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/card_content_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class CardItemWidget extends StatelessWidget {
             fit: BoxFit.fill,
             image: AssetImage(AssetsData.kCardBackground),
           ),
-          color: ColorsPallete.kBlueSky,
+          color: AppColors.kBlueSky,
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
         child: const CardContentWidget(),

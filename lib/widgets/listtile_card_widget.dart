@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class ListtileCardWidget extends StatelessWidget {
@@ -8,7 +8,7 @@ class ListtileCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Card(
-      color: ColorsPallete.kWhiteSmoke,
+      color: AppColors.kWhiteSmoke,
       elevation: 0,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(

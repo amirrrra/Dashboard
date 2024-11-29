@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/header_widget.dart';
 import 'package:dashboard/widgets/invoice_button_widget.dart';
 import 'package:dashboard/widgets/invoice_form_widget.dart';
@@ -18,17 +18,17 @@ class InvoiceWidget extends StatelessWidget {
           HeaderWidget(
             title: 'Quick Invoice',
             widget: CircleAvatar(
-              backgroundColor: ColorsPallete.kWhiteSmoke,
+              backgroundColor: AppColors.kWhiteSmoke,
               child: Icon(
                 Icons.add,
-                color: ColorsPallete.kBlueSky,
+                color: AppColors.kBlueSky,
               ),
             ),
           ),
           SizedBox(height: 24),
           InvoiceTransactionWidget(),
           Divider(
-            color: ColorsPallete.kGrayWhisper,
+            color: AppColors.kGrayWhisper,
             height: 48,
           ),
           InvoiceFormWidget(),
@@ -38,8 +38,8 @@ class InvoiceWidget extends StatelessWidget {
               Expanded(
                 child: InvoiceButtonWidget(
                   text: 'Add more details',
-                  textColor: ColorsPallete.kBlueSky,
-                  backgroundColor: ColorsPallete.kTransparent,
+                  textColor: AppColors.kBlueSky,
+                  backgroundColor: AppColors.kTransparent,
                 ),
               ),
               Expanded(

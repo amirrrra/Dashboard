@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CardIndicatorWidget extends StatelessWidget {
@@ -12,7 +12,7 @@ class CardIndicatorWidget extends StatelessWidget {
       width: isActive ? 32 : 8,
       height: 8,
       decoration: BoxDecoration(
-        color: isActive ? ColorsPallete.kBlueSky : ColorsPallete.kPlatinum,
+        color: isActive ? AppColors.kBlueSky : AppColors.kPlatinum,
         borderRadius: const BorderRadius.all(Radius.circular(12)),
       ),
     );

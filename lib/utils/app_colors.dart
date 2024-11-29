@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class ColorsPallete {
+abstract class AppColors {
   static const kPrimaryColor = Color(0xff064060);
   static const kBlueMedium = Color(0xFF208BC7);
   static const kBlueSky = Color(0xFF4DB7F2);

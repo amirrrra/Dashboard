@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +8,7 @@ class IncomeChartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1,
+      aspectRatio: 1.7,
       child: PieChart(
         PieChartData(
           sectionsSpace: 0,
@@ -25,10 +25,10 @@ class IncomeChartWidget extends StatelessWidget {
   }
 
   List<PieChartSectionData> get chartItems => [
-        getPieChartSectionData(color: ColorsPallete.kBlueMedium, value: 40),
-        getPieChartSectionData(color: ColorsPallete.kBlueSky, value: 25),
-        getPieChartSectionData(color: ColorsPallete.kPrimaryColor, value: 20),
-        getPieChartSectionData(color: ColorsPallete.kBeige, value: 15),
+        getPieChartSectionData(color: AppColors.kBlueMedium, value: 40),
+        getPieChartSectionData(color: AppColors.kBlueSky, value: 25),
+        getPieChartSectionData(color: AppColors.kPrimaryColor, value: 20),
+        getPieChartSectionData(color: AppColors.kBeige, value: 15),
       ];
 
   PieChartSectionData getPieChartSectionData({

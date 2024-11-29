@@ -1,29 +1,31 @@
+import 'package:dashboard/models/income_model.dart';
 import 'package:dashboard/utils/app_styles.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class IncomeItemWidget extends StatelessWidget {
-  const IncomeItemWidget({super.key});
+  final IncomeModel incomeModel;
+  const IncomeItemWidget({super.key, required this.incomeModel});
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(      
+    return ListTile(
       leading: Container(
         width: 12,
         height: 12,
-        decoration: const ShapeDecoration(
-          color: ColorsPallete.kBlueMedium,
-          shape: OvalBorder(),
+        decoration: ShapeDecoration(
+          color: incomeModel.color,
+          shape: const OvalBorder(),
         ),
       ),
       title: Text(
-        'Design service',
+        incomeModel.title,
         style: AppStyles.regular16(context),
       ),
       trailing: Text(
-        '40%',
+        '${incomeModel.percentage}%',
         style: AppStyles.medium16(context).copyWith(
-          color: ColorsPallete.kBlueSky,
+          color: AppColors.kBlueSky,
         ),
       ),
     );

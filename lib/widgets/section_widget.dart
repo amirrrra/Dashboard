@@ -1,4 +1,4 @@
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SectionWidget extends StatelessWidget {
@@ -10,7 +10,7 @@ class SectionWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: const BoxDecoration(
-        color: ColorsPallete.kWhite,
+        color: AppColors.kWhite,
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
       child: child,

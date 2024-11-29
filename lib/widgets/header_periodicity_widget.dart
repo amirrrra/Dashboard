@@ -1,5 +1,5 @@
 import 'package:dashboard/utils/app_styles.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HeaderPeriodicityWidget extends StatelessWidget {
@@ -12,10 +12,10 @@ class HeaderPeriodicityWidget extends StatelessWidget {
       height: 48,
       padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
-        color: ColorsPallete.kWhite,
+        color: AppColors.kWhite,
         shape: RoundedRectangleBorder(
           side: const BorderSide(
-            color: ColorsPallete.kGrayWhisper,
+            color: AppColors.kGrayWhisper,
           ),
           borderRadius: BorderRadius.circular(12),
         ),

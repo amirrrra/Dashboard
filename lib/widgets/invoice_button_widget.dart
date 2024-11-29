@@ -1,5 +1,5 @@
 import 'package:dashboard/utils/app_styles.dart';
-import 'package:dashboard/utils/colors_pallete.dart';
+import 'package:dashboard/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class InvoiceButtonWidget extends StatelessWidget {
@@ -20,7 +20,7 @@ class InvoiceButtonWidget extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(
           padding: const EdgeInsets.all(20),
-          backgroundColor: backgroundColor ?? ColorsPallete.kBlueSky,
+          backgroundColor: backgroundColor ?? AppColors.kBlueSky,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(12)),
           ),
