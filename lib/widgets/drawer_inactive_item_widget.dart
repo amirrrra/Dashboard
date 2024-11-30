@@ -16,11 +16,14 @@ class DrawerInactiveItemWidget extends StatelessWidget {
       leading: SvgPicture.asset(
         drawerModel.icon,
       ),
-      title: Text(
-        drawerModel.title,
-        style: AppStyles.regular16(context),
+      title: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          drawerModel.title,
+          style: AppStyles.regular16(context),
+        ),
       ),
-     
     );
   }
 }

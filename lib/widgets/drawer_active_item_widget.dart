@@ -17,9 +17,13 @@ class DrawerActiveItemWidget extends StatelessWidget {
       leading: SvgPicture.asset(
         drawerModel.icon,
       ),
-      title: Text(
-        drawerModel.title,
-        style: AppStyles.bold16(context),
+      title: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          drawerModel.title,
+          style: AppStyles.bold16(context),
+        ),
       ),
       trailing: Container(
         width: 3.27,

@@ -15,13 +15,21 @@ class UserInfoWidget extends StatelessWidget {
         leading: SvgPicture.asset(
           userInfoModel.image,
         ),
-        title: Text(
-          userInfoModel.name,
-          style: AppStyles.semiBold16(context),
+        title: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            userInfoModel.name,
+            style: AppStyles.semiBold16(context),
+          ),
         ),
-        subtitle: Text(
-          userInfoModel.gmail,
-          style: AppStyles.regular12(context),
+        subtitle: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            userInfoModel.gmail,
+            style: AppStyles.regular12(context),
+          ),
         ),
       ),
     );
