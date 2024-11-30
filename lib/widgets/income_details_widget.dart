@@ -5,8 +5,8 @@ import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/income_item_widget.dart';
 import 'package:flutter/material.dart';
 
-class IncomeListWidget extends StatelessWidget {
-  const IncomeListWidget({super.key});
+class IncomeDetailsWidget extends StatelessWidget {
+  const IncomeDetailsWidget({super.key});
   static const incomeItems = [
     IncomeModel(
       title: 'Design service',
