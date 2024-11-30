@@ -10,40 +10,47 @@ class DesktopLayoutWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      slivers: [
-        SliverFillRemaining(
-          hasScrollBody: false,
-          child: Row(
-            children: [
-              Expanded(
-                child: DrawerWidget(),
-              ),
-              Expanded(
-                flex: 3,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 32, right: 24, top: 40),
-                  child: Column(
-                    children: [
-                      ExpensesWidget(),
-                      SizedBox(height: 24),
-                      InvoiceWidget(),
-                    ],
-                  ),
-                ),
-              ),
-              Expanded(
-                flex: 2,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 40, right: 32),
-                  child: Column(
-                    children: [
-                      CardAndTransactionWidget(),
-                      SizedBox(height: 24),
-                      Expanded(child: IncomeWidget()),
-                      SizedBox(height: 32),
-                    ],
-                  ),
+    return const Row(
+      children: [
+        Expanded(
+          child: DrawerWidget(),
+        ),
+        Expanded(
+          flex: 5,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 32, right: 24, top: 40),
+                        child: Column(
+                          children: [
+                            ExpensesWidget(),
+                            SizedBox(height: 24),
+                            InvoiceWidget(),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 40, right: 32),
+                        child: Column(
+                          children: [
+                            CardAndTransactionWidget(),
+                            SizedBox(height: 24),
+                            Expanded(child: IncomeWidget()),
+                            SizedBox(height: 32),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
