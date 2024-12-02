@@ -34,20 +34,22 @@ class _ExpensesListWidgetState extends State<ExpensesListWidget> {
   Widget build(BuildContext context) {
     return Row(
       children: List.generate(
-        expensesItems.length,
+        expensesItems.length * 2 - 1, // 3 items + 2 space
         (index) {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () => updateIndex(index),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+          if (index.isEven) {
+            final itemIndex = index ~/ 2; /* 1~/2=0 ==== 3~/2=1 */
+            return Expanded(
+              child: GestureDetector(
+                onTap: () => updateIndex(itemIndex),
                 child: ExpensesItemWidget(
-                  isActive: activeIndex == index,
-                  expensesModel: expensesItems[index],
+                  isActive: activeIndex == itemIndex,
+                  expensesModel: expensesItems[itemIndex],
                 ),
               ),
-            ),
-          );
+            );
+          } else {
+            return const SizedBox(width: 12); 
+          }
         },
       ),
     );
