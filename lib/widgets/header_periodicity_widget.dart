@@ -8,8 +8,6 @@ class HeaderPeriodicityWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 134,
-      height: 48,
       padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
         color: AppColors.kWhite,

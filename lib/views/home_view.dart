@@ -1,6 +1,7 @@
 import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/widgets/adaptive_layout_widget.dart';
-import 'package:dashboard/widgets/desktop_layout_widget.dart';
+import 'package:dashboard/widgets/layout_desktop_widget.dart';
+import 'package:dashboard/widgets/layout_tablet_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -12,8 +13,8 @@ class HomeView extends StatelessWidget {
       backgroundColor: AppColors.kWhiteOff,
       body: AdaptiveLayoutWidget(
         mobileLayout: (context) => const SizedBox(),
-        tabletLayout: (context) => const SizedBox(),
-        desktopLayout: (context) => const DesktopLayoutWidget(),
+        tabletLayout: (context) => const LayoutTabletWidget(),
+        desktopLayout: (context) => const LayoutDesktopWidget(),
       ),
     );
   }
