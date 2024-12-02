@@ -1,6 +1,7 @@
 import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/assets_data.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -10,10 +11,13 @@ class CardContentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
+          const Flexible(
+            child: SizedBox(height: 20),
+          ),
           ListTile(
             minTileHeight: 0,
             contentPadding: const EdgeInsets.all(0),
@@ -28,15 +32,19 @@ class CardContentWidget extends StatelessWidget {
             ),
             trailing: SvgPicture.asset(AssetsData.kGallery),
           ),
-          const Spacer(),
-          Text(
-            '0918 8124 0042 8129',
-            style: AppStyles.semiBold24(context),
+          const Spacer(flex: 4),
+          FittedboxWidget(
+            child: Text(
+              '0918 8124 0042 8129',
+              style: AppStyles.semiBold24(context),
+            ),
           ),
-          const SizedBox(height: 12),
           Text(
             '12/20 - 124',
             style: getRegular16(context),
+          ),
+          const Flexible(
+            child: SizedBox(height: 20),
           )
         ],
       ),
