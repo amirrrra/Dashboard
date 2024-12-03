@@ -1,10 +1,16 @@
 import 'package:dashboard/utils/app_colors.dart';
 import 'package:dashboard/utils/constants.dart';
 import 'package:dashboard/views/home_view.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Dashboard());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const Dashboard(),
+    ),
+  );
 }
 
 class Dashboard extends StatelessWidget {
@@ -13,8 +19,9 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       home: const HomeView(),
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
@@ -23,6 +30,7 @@ class Dashboard extends StatelessWidget {
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
