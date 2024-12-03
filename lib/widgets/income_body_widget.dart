@@ -10,7 +10,7 @@ class IncomeBodyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.sizeOf(context).width;
 
-    return screenWidth >= SizeConfig.desktop && screenWidth <= 1240
+    return screenWidth >= SizeConfig.desktop && screenWidth <= 1240 || screenWidth<360
         ? const Padding(
           padding: EdgeInsets.all(25),
           child: IncomeChartWidget(showTitle: true),

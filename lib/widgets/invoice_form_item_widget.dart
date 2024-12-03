@@ -1,4 +1,5 @@
 import 'package:dashboard/utils/app_styles.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:dashboard/widgets/invoice_form_textfield_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -16,9 +17,11 @@ class InvoiceFormItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: AppStyles.medium16(context),
+        FittedboxWidget(
+          child: Text(
+            title,
+            style: AppStyles.medium16(context),
+          ),
         ),
         const SizedBox(height: 12),
         InvoiceFormTextfieldWidget(hint: hint)

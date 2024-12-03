@@ -1,5 +1,6 @@
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/app_colors.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:flutter/material.dart';
 
 class InvoiceButtonWidget extends StatelessWidget {
@@ -27,10 +28,12 @@ class InvoiceButtonWidget extends StatelessWidget {
         ),
         onPressed: () {},
         child: Center(
-          child: Text(
-            text,
-            style: AppStyles.semiBold18(context).copyWith(
-              color: textColor,
+          child: FittedboxWidget(
+            child: Text(
+              text,
+              style: AppStyles.semiBold18(context).copyWith(
+                color: textColor,
+              ),
             ),
           ),
         ),

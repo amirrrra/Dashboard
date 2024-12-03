@@ -1,5 +1,6 @@
 import 'package:dashboard/models/drawer_model.dart';
 import 'package:dashboard/utils/app_styles.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -16,9 +17,7 @@ class DrawerInactiveItemWidget extends StatelessWidget {
       leading: SvgPicture.asset(
         drawerModel.icon,
       ),
-      title: FittedBox(
-        alignment: Alignment.centerLeft,
-        fit: BoxFit.scaleDown,
+      title: FittedboxWidget(
         child: Text(
           drawerModel.title,
           style: AppStyles.regular16(context),
