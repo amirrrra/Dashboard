@@ -12,6 +12,7 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.sizeOf(context).width*.8,
       decoration: const BoxDecoration(color: AppColors.kWhite),
       padding: const EdgeInsets.only(left: 12, right: 20),
       child: const Column(
