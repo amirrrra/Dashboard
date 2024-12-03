@@ -13,6 +13,7 @@ class LayoutMobileWidget extends StatelessWidget {
         child: Column(
           children: [
             SectionExpensesAndInvoice(),
+            SizedBox(height: 24),
             SectionCardTransactionAndIncome(),
           ],
         ),

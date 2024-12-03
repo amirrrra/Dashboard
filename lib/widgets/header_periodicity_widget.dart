@@ -1,5 +1,6 @@
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/app_colors.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:flutter/material.dart';
 
 class HeaderPeriodicityWidget extends StatelessWidget {
@@ -19,15 +20,24 @@ class HeaderPeriodicityWidget extends StatelessWidget {
         ),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            'Monthly',
-            style: AppStyles.medium16(context),
+          Flexible(
+            flex: 2,
+            child: FittedboxWidget(
+              child: Text(
+                'Monthly',
+                style: AppStyles.medium16(context),
+              ),
+            ),
           ),
           const SizedBox(width: 18),
-          const Icon(
-            Icons.keyboard_arrow_down,
-            size: 24,
+          const Flexible(
+            child: FittedboxWidget(
+              child: Icon(
+                Icons.keyboard_arrow_down,
+              ),
+            ),
           ),
         ],
       ),
