@@ -9,6 +9,7 @@ class HeaderPeriodicityWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
         color: AppColors.kWhite,
@@ -20,10 +21,10 @@ class HeaderPeriodicityWidget extends StatelessWidget {
         ),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Flexible(
-            flex: 2,
             child: FittedboxWidget(
               child: Text(
                 'Monthly',
@@ -31,7 +32,6 @@ class HeaderPeriodicityWidget extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 18),
           const Flexible(
             child: FittedboxWidget(
               child: Icon(
