@@ -12,24 +12,38 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.sizeOf(context).width*.8,
+      width: MediaQuery.sizeOf(context).width * .8,
       decoration: const BoxDecoration(color: AppColors.kWhite),
       padding: const EdgeInsets.only(left: 12, right: 20),
-      child: const Column(
-        children: [
-          SizedBox(height: 40),
-          UserInfoWidget(
-            userInfoModel: UserInfoModel(
-              image: AssetsData.kAvatar3,
-              name: 'Lekan Okeowo',
-              gmail: 'demo@gmail.com',
+      child: const CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                SizedBox(height: 40),
+                UserInfoWidget(
+                  userInfoModel: UserInfoModel(
+                    image: AssetsData.kAvatar3,
+                    name: 'Lekan Okeowo',
+                    gmail: 'demo@gmail.com',
+                  ),
+                ),
+                SizedBox(height: 20),
+                DrawerItemsListWidget(),
+                SizedBox(height: 20),
+              ],
             ),
           ),
-          SizedBox(height: 20),
-          DrawerItemsListWidget(),
-          Spacer(),
-          DrawerTrailingItemsWidget(),
-          SizedBox(height: 40)
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Spacer(),
+                DrawerTrailingItemsWidget(),
+                SizedBox(height: 40),
+              ],
+            ),
+          ),
         ],
       ),
     );

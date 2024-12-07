@@ -25,7 +25,7 @@ class _HomeViewState extends State<HomeView> {
     var screenWidth = MediaQuery.sizeOf(context).width;
     log(screenWidth.toString());
     return Scaffold(
-      drawer: screenWidth < SizeConfig.tablet ? DrawerWidget() : null,
+      drawer: screenWidth < SizeConfig.tablet ? const DrawerWidget() : null,
       appBar: screenWidth < SizeConfig.tablet
           ? AppBarWidget(
               onPressed: () {

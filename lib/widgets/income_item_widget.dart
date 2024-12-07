@@ -1,6 +1,7 @@
 import 'package:dashboard/models/income_model.dart';
 import 'package:dashboard/utils/app_styles.dart';
 import 'package:dashboard/utils/app_colors.dart';
+import 'package:dashboard/widgets/fittedbox_widget.dart';
 import 'package:flutter/material.dart';
 
 class IncomeItemWidget extends StatelessWidget {
@@ -18,9 +19,11 @@ class IncomeItemWidget extends StatelessWidget {
           shape: const OvalBorder(),
         ),
       ),
-      title: Text(
-        incomeModel.title,
-        style: AppStyles.regular16(context),
+      title: FittedboxWidget(
+        child: Text(
+          incomeModel.title,
+          style: AppStyles.regular16(context),
+        ),
       ),
       trailing: Text(
         '${incomeModel.percentage}%',
