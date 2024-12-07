@@ -19,7 +19,6 @@ class HeaderWidget extends StatelessWidget {
           title,
           style: AppStyles.semiBold20(context),
         ),
-        // const Spacer(),
         if (widget != null)
           widget!,
       ],

@@ -9,7 +9,7 @@ class LayoutMobileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+        padding: EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           children: [
             SectionExpensesAndInvoice(),

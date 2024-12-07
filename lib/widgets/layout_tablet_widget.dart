@@ -15,7 +15,10 @@ class LayoutTabletWidget extends StatelessWidget {
         ),
         Expanded(
           flex: 5,
-          child: LayoutMobileWidget(),
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 32),
+            child: LayoutMobileWidget(),
+          ),
         ),
       ],
     );
